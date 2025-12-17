@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const ShopBanner = () => {
+  const { t } = useTranslation();
   return (
     <div className="relative">
       <img
@@ -15,10 +18,10 @@ const ShopBanner = () => {
     "
       >
         <h2 className="text-[17px] font-normal tracking-[.51px] leading-[1.58824] font-lato text-white uppercase mb-[18px] ">
-          Explore our product
+          {t("shop.banner.subtitle")}
         </h2>
         <h3 className="text-[52px] font-thin font-cormorant leading-[1.19231] text-white uppercase tracking-[0]">
-          Our wine vollection
+          {t("shop.banner.title")}
         </h3>
       </div>
     </div>

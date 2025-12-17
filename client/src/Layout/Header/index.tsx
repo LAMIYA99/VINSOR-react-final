@@ -9,11 +9,14 @@ import { ArrowRight, ChevronDown, CircleUserRound } from "lucide-react";
 import SaveToken from "../../Featured/Components/SaveToken";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useCart } from "../../Provider/CartContext";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../../Components/ui/LanguageSwitcher";
 
 const Header = () => {
   const router = useRouterState();
   const { getCartCount } = useCart();
   const cartCount = getCartCount();
+  const { t } = useTranslation();
 
   const isShopPage = router.location.pathname.startsWith("/shop");
   return (
@@ -37,7 +40,7 @@ const Header = () => {
                     key={item?.id}
                     className="text-white hover:text-[#bd9556] duration-300 cursor-pointer text-[15px] px-5 font-lato uppercase leading-[2.08333px] flex gap-1 justify-center items-center"
                   >
-                    <Link to={item?.path}>{item?.name}</Link>{" "}
+                    <Link to={item?.path}>{t(`navbar.${item?.name}`)}</Link>{" "}
                     {item?.icon && <ChevronDown size={22} strokeWidth={1} />}
                   </li>
                 ))}
@@ -45,6 +48,7 @@ const Header = () => {
           </div>
 
           <div className="flex items-center justify-end gap-8">
+            <LanguageSwitcher />
             <div className="flex justify-center items-center gap-2">
               <div>
                 <SignedOut>
@@ -95,7 +99,7 @@ const Header = () => {
                     key={item?.id}
                     className="text-white text-[15px] hover:text-[#bd9556] duration-300 cursor-pointer px-5 font-lato uppercase leading-[2.08333px] flex gap-1 justify-center items-center"
                   >
-                    <Link to={item?.path}>{item?.name}</Link>{" "}
+                    <Link to={item?.path}>{t(`navbar.${item?.name}`)}</Link>{" "}
                     {item?.icon && <ChevronDown size={22} strokeWidth={1} />}
                   </li>
                 ))}
@@ -113,6 +117,7 @@ const Header = () => {
           </div>
 
           <div className="flex items-center justify-end gap-8">
+            <LanguageSwitcher />
             <div className="flex justify-center items-center gap-2">
               <div>
                 <SignedOut>
@@ -153,7 +158,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-3">
               <button className="bg-[#631015] text-[16px]  flex gap-1.5  text-white py-3.5 px-[35px]">
-                Book Tour <ArrowRight size={22} />
+                {t("header.bookTour")} <ArrowRight size={22} />
               </button>
             </div>
           </div>

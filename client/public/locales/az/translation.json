@@ -1,0 +1,84 @@
+{
+  "navbar": {
+    "Home": "Ana Səhifə",
+    "Pages": "Səhifələr",
+    "Shop": "Mağaza",
+    "Contact": "Əlaqə"
+  },
+  "header": {
+    "bookTour": "Tur Sifariş Et"
+  },
+  "home": {
+    "banner": {
+      "subtitle": "TƏNƏKDƏN QƏDƏHƏ",
+      "title": "ƏL İLƏ YIĞILMIŞ ÜZÜMLƏR,\nMÜKƏMMƏL ŞƏRAB KEYFİYYƏTİ",
+      "button": "Məhsulları Kəşf Et",
+      "trustedPartner": "Etibarlı şərab tərəfdaşı"
+    },
+    "about": {
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu turpis et quam auctor bibendum etivitale arcu. Etiam mollis leoiat lorem placerat aliquet nisi aliquam praesent mauris.",
+      "button": "Daha Çox",
+      "subtitle": "Haqqımızda",
+      "title": "ŞƏRABÇILIQ HEKAYƏMİZİN\nBAŞLADIĞI YER",
+      "stats": {
+        "years": { "value": "25+", "label": "İllərin şərabçılıq təcrübəsi" },
+        "grapes": {
+          "value": "100%",
+          "label": "Hər şüşə üçün əl ilə yığılmış üzümlər"
+        },
+        "bottles": { "value": "50M", "label": "İllik istehsal olunan şüşələr" }
+      }
+    },
+    "collections": {
+      "subtitle": "Dünyanın dadını çıxarın",
+      "title": "Ölkələr üzrə şərab \n kolleksiyası",
+      "button": "Daha çox məhsul"
+    },
+    "limited": {
+      "subtitle": "Bu şəraba 15% qənaət edin",
+      "productName": "duskwine",
+      "price": "$21.25",
+      "tabs": {
+        "winemaking": "Şərabçılıq",
+        "vineyard": "Üzüm bağı"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ewtu turpis et quam auctor bibendum etivitae arcu. Etiam moyellis leoiat lorem placerat aliquet nisi aliquam praesent mauris.",
+      "button": "İndi Al",
+      "deal": {
+        "subtitle": "Həftənin təklifi",
+        "title": "Məhdud kolleksiya,\n böyük qənaət"
+      },
+      "timer": {
+        "days": "Gün",
+        "hours": "Saat",
+        "min": "dəq",
+        "sec": "san"
+      }
+    },
+    "collectionCard": {
+      "discount": "10% endirim",
+      "productName": "Vinocraft",
+      "addToCart": "Səbətə at"
+    }
+  },
+  "shop": {
+    "banner": {
+      "subtitle": "Məhsullarımızı kəşf edin",
+      "title": "Bizim şərab kolleksiyası"
+    },
+    "features": {
+      "delivery": "Pulsuz çatdırılma",
+      "support": "24/7 müştəri dəstəyi",
+      "quality": "Keyfiyyət zəmanəti",
+      "availability": "24/7 açığıq"
+    },
+    "deal": {
+      "subtitle": "Həftənin təklifi",
+      "title": "Məhdud kolleksiya,\n böyük qənaət",
+      "button": "Məhsulları kəşf et"
+    }
+  },
+  "footer": {
+    "text": "footer"
+  }
+}

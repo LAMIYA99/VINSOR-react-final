@@ -1,0 +1,84 @@
+{
+  "navbar": {
+    "Home": "Home",
+    "Pages": "Pages",
+    "Shop": "Shop",
+    "Contact": "Contact"
+  },
+  "header": {
+    "bookTour": "Book Tour"
+  },
+  "home": {
+    "banner": {
+      "subtitle": "FROM VINE TO GLASS",
+      "title": "HANDPICKED GRAPES,\nEXCEPTIONAL WINE QUALITY",
+      "button": "Explore Products",
+      "trustedPartner": "Trusted wine partner"
+    },
+    "about": {
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu turpis et quam auctor bibendum etivitale arcu. Etiam mollis leoiat lorem placerat aliquet nisi aliquam praesent mauris.",
+      "button": "Discover More",
+      "subtitle": "About Us",
+      "title": "WHERE OUR WINERY\nSTORY BEGINS",
+      "stats": {
+        "years": { "value": "25+", "label": "Years of winemaking excellence" },
+        "grapes": {
+          "value": "100%",
+          "label": "Handpicked grapes for every bottle"
+        },
+        "bottles": { "value": "50M", "label": "Bottles produced annually" }
+      }
+    },
+    "collections": {
+      "subtitle": "Taste the world",
+      "title": "Curated wine \n collection by nation",
+      "button": "More products"
+    },
+    "limited": {
+      "subtitle": "Save 15% on this wine",
+      "productName": "duskwine",
+      "price": "$21.25",
+      "tabs": {
+        "winemaking": "Winemaking",
+        "vineyard": "Vineyard"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ewtu turpis et quam auctor bibendum etivitae arcu. Etiam moyellis leoiat lorem placerat aliquet nisi aliquam praesent mauris.",
+      "button": "Buy Now",
+      "deal": {
+        "subtitle": "Deal of the week",
+        "title": "Limited collection,\n big savings"
+      },
+      "timer": {
+        "days": "Days",
+        "hours": "Hours",
+        "min": "min",
+        "sec": "sec"
+      }
+    },
+    "collectionCard": {
+      "discount": "10% off",
+      "productName": "Vinocraft",
+      "addToCart": "Add to cart"
+    }
+  },
+  "shop": {
+    "banner": {
+      "subtitle": "Explore our product",
+      "title": "Our wine collection"
+    },
+    "features": {
+      "delivery": "Enjoy free delivery",
+      "support": "24*7 customer care",
+      "quality": "Quality assurance",
+      "availability": "We are open 24/7"
+    },
+    "deal": {
+      "subtitle": "Deal of the week",
+      "title": "Limited collection,\n big savings",
+      "button": "Explore products"
+    }
+  },
+  "footer": {
+    "text": "footer"
+  }
+}

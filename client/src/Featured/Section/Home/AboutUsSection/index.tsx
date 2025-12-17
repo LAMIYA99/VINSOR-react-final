@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const AboutUsSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative  bg-[#F7F1E8] p-40 mt-40 overflow-hidden">
       {/* LEFT DECORATION IMAGE */}
@@ -31,26 +33,22 @@ const AboutUsSection = () => {
           </div>
 
           <p className="text-[#4A4A4A] mt-6 leading-7">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu
-            turpis et quam auctor bibendum etivitale arcu. Etiam mollis leoiat
-            lorem placerat aliquet nisi aliquam praesent mauris.
+            {t("home.about.description")}
           </p>
 
           <button className="mt-6 bg-[#631015] text-white px-7 py-3 flex items-center gap-2 w-fit">
-            Discover More <ArrowRight size={20} />
+            {t("home.about.button")} <ArrowRight size={20} />
           </button>
         </div>
 
         {/* RIGHT SIDE */}
         <div>
           <p className="text-[#73614C] tracking-[2px] text-[14px] uppercase mb-3">
-            About Us
+            {t("home.about.subtitle")}
           </p>
 
           <h2 className="text-[#5B4632] font-serif text-[42px] leading-tight mb-8">
-            WHERE OUR WINERY
-            <br />
-            STORY BEGINS
+            {t("home.about.title")}
           </h2>
 
           {/* BIG RIGHT IMAGE (EMPTY FOR NOW) */}
@@ -66,26 +64,26 @@ const AboutUsSection = () => {
       <div className="grid grid-cols-3 container mx-auto px-31 pt-[230px] ">
         <div className="flex items-center gap-5 border-r border-[#E9BD77]">
           <h2 className="text-[#704f1b] text-[80px] font-thin leading-[.775] font-cormorant">
-            25+
+            {t("home.about.stats.years.value")}
           </h2>
           <p className="text-[#1f2324] text-[20px] uppercase font-medium leading-normal font-cormorant">
-            Years of winemaking excellence
+            {t("home.about.stats.years.label")}
           </p>
         </div>
         <div className="flex items-center gap-5 border-r border-[#E9BD77] pl-6">
           <h2 className="text-[#704f1b] text-[80px] font-thin leading-[.775] font-cormorant">
-            100%
+            {t("home.about.stats.grapes.value")}
           </h2>
           <p className="text-[#1f2324] text-[20px] uppercase font-medium leading-normal font-cormorant">
-            Handpicked grapes for every bottle
+            {t("home.about.stats.grapes.label")}
           </p>
         </div>
         <div className="flex items-center gap-5  pl-6">
           <h2 className="text-[#704f1b] text-[80px] font-thin leading-[.775] font-cormorant">
-            50M
+            {t("home.about.stats.bottles.value")}
           </h2>
           <p className="text-[#1f2324] text-[20px] uppercase font-medium leading-normal font-cormorant">
-            Bottles produced annually
+            {t("home.about.stats.bottles.label")}
           </p>
         </div>
       </div>

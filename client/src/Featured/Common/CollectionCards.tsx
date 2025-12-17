@@ -1,14 +1,16 @@
+import { useTranslation } from "react-i18next";
 import { useCart } from "../../Provider/CartContext";
 
 const CollectionCards = () => {
   const { addToCart } = useCart();
+  const { t } = useTranslation();
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation(); // Prevent navigating to product detail if parent has onClick
     addToCart({
       id: "vinocraft-1", // Using a static ID for now since this is a UI component without props yet
-      name: "Vinocraft",
+      name: t("home.collectionCard.productName"),
       price: 12.0,
       image:
         "https://cdn.prod.website-files.com/683942fbda6583a1fd804795/685e19e297495bea0e798543_flower-bg-image.svg",
@@ -29,7 +31,7 @@ const CollectionCards = () => {
           className="w-[81px] h-[267px] absolute cursor-pointer"
         />
         <button className="absolute top-5 left-0 bg-[#704f1b] px-2.5 py-0.5 text-[18px] font-medium leading-normal font-cormorant uppercase text-white">
-          10% off
+          {t("home.collectionCard.discount")}
         </button>
         <ul className="absolute top-5 right-5 flex flex-col gap-2.5 opacity-0 group-hover:opacity-100 duration-300">
           <li
@@ -53,7 +55,7 @@ const CollectionCards = () => {
       </div>
       <div className="flex items-center justify-center  flex-col gap-[5px] mt-[30px]">
         <h2 className="text-[#704f1b] uppercase text-[20px] font-medium  leading-normal tracking-[0] font-cormorant">
-          Vinocraft
+          {t("home.collectionCard.productName")}
         </h2>
         <h3 className="text-[#1f2324] font-medium leading-normal text-[20px] font-cormorant uppercase">
           $ 12.00 USD

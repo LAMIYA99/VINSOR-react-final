@@ -1,6 +1,8 @@
-import {  ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const BannerSection = () => {
+  const { t } = useTranslation();
   return (
     <section
       className="relative w-full h-[825px] bg-cover bg-center"
@@ -12,18 +14,16 @@ const BannerSection = () => {
       <div className="absolute inset-0 bg-black/60"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-full px-4">
-        <p className="text-white text-[17px] font-normal tracking-[.51px] font-lato uppercase">
-          FROM VINE TO GLASS
+        <p className="text-white text-[17px] font-normal tracking-[.51px] font-lato uppercase w-[400px]">
+          {t("home.banner.subtitle")}
         </p>
 
-        <h1 className="text-white text-[52px] uppercase font-light font-cormorant leading-[1.19231] mt-4">
-          HANDPICKED GRAPES,
-          <br />
-          EXCEPTIONAL WINE QUALITY
+        <h1 className="text-white text-[52px] uppercase font-light font-cormorant leading-[1.19231] mt-4 w-[800px]">
+          {t("home.banner.title")}
         </h1>
 
         <button className="mt-8 bg-[#631015] text-white text-[16px] py-3.5 px-10 flex items-center gap-2">
-          Explore Products <ArrowRight size={22} />
+          {t("home.banner.button")} <ArrowRight size={22} />
         </button>
       </div>
 
@@ -47,7 +47,7 @@ const BannerSection = () => {
       <div className="absolute bottom-[-110px] w-full h-[14%] bg-black z-10"></div>
       <div className=" text-white mt-26 bg-black">
         <h2 className="text-center font-cormorant text-[#C1A373] text-[18px] uppercase font-medium leading-normal">
-          Trusted wine partner
+          {t("home.banner.trustedPartner")}
         </h2>
 
         <div className="overflow-hidden whitespace-nowrap">
@@ -114,5 +114,4 @@ const BannerSection = () => {
     </section>
   );
 };
-
 export default BannerSection;
