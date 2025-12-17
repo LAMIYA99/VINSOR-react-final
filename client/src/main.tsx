@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App.tsx";
 import TanstackQueryProvider from "./Provider/TanstackQueryProvider.tsx";
 import { ClerkProvider } from "@clerk/clerk-react";
+import { ToastProvider } from "./Provider/ToastContext.tsx";
+import { CartProvider } from "./Provider/CartContext.tsx";
+
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
 if (!PUBLISHABLE_KEY) {
@@ -14,7 +17,11 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
       <TanstackQueryProvider>
-        <App />
+        <ToastProvider>
+          <CartProvider>
+            <App />
+          </CartProvider>
+        </ToastProvider>
       </TanstackQueryProvider>
     </ClerkProvider>
   </StrictMode>
