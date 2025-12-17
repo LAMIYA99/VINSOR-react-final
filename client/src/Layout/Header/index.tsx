@@ -33,7 +33,7 @@ const Header = () => {
                 navbar?.map((item) => (
                   <li
                     key={item?.id}
-                    className="text-white text-[15px] px-5 font-lato uppercase leading-[2.08333px] flex gap-1 justify-center items-center"
+                    className="text-white hover:text-[#bd9556] duration-300 cursor-pointer text-[15px] px-5 font-lato uppercase leading-[2.08333px] flex gap-1 justify-center items-center"
                   >
                     <Link to={item?.path}>{item?.name}</Link>{" "}
                     {item?.icon && <ChevronDown size={22} strokeWidth={1} />}
@@ -91,7 +91,7 @@ const Header = () => {
                 navbar?.map((item) => (
                   <li
                     key={item?.id}
-                    className="text-white text-[15px] px-5 font-lato uppercase leading-[2.08333px] flex gap-1 justify-center items-center"
+                    className="text-white text-[15px] hover:text-[#bd9556] duration-300 cursor-pointer px-5 font-lato uppercase leading-[2.08333px] flex gap-1 justify-center items-center"
                   >
                     <Link to={item?.path}>{item?.name}</Link>{" "}
                     {item?.icon && <ChevronDown size={22} strokeWidth={1} />}
