@@ -21,11 +21,13 @@ const Header = () => {
       {isShopPage ? (
         <div className="grid grid-cols-3 mx-auto max-w-[1750px] px-[15px]  justify-between w-full items-center">
           <div className="flex items-start  ">
-            <img
-              src="
+            <Link to="/">
+              <img
+                src="
           https://cdn.prod.website-files.com/683942fbda6583a1fd804795/685e1870a3cd368917c4829e_logo.svg"
-              alt=""
-            />
+                alt=""
+              />
+            </Link>
           </div>
           <div className=" w-full flex  ">
             <ul className="flex items-center  justify-center gap-1 ">
@@ -101,11 +103,13 @@ const Header = () => {
           </div>
 
           <div className="flex items-center justify-center ">
-            <img
-              src="
+            <Link to="/">
+              <img
+                src="
           https://cdn.prod.website-files.com/683942fbda6583a1fd804795/685e1870a3cd368917c4829e_logo.svg"
-              alt=""
-            />
+                alt=""
+              />
+            </Link>
           </div>
 
           <div className="flex items-center justify-end gap-8">
